@@ -1,0 +1,49 @@
+Dependencies for Project 'LED-LIB', Target 'Target 1': (DO NOT MODIFY !)
+F (F:\学习资料\0-野火【F429开发板-挑战者】光盘资料\A盘（资料盘）\STM32F429固件库\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s)(0x582097A2)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-IC:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I"D:\keil mkd-arm\keil\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 527" --pd "STM32F429xx SETA 1"--list ..\listing\startup_stm32f429_439xx.lst --xref -o ..\output\startup_stm32f429_439xx.o --depend ..\output\startup_stm32f429_439xx.d)
+F (..\Libraries\misc.c)(0x581CC67C)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries -I ..\User -I ..\Project-I.\RTE\_Target_1-IC:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I"D:\keil mkd-arm\keil\ARM\CMSIS\Include"-D__UVISION_VERSION="527" -DSTM32F429xx -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER-o ..\output\misc.o --omf_browse ..\output\misc.crf --depend ..\output\misc.d)
+I (..\Libraries\misc.h)(0x581CC67C)
+I (..\Libraries\stm32f4xx.h)(0x582097AC)
+I (..\Libraries\core_cm4.h)(0x581CC64E)
+I (D:\keil mkd-arm\keil\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\Libraries\core_cmInstr.h)(0x581CC64E)
+I (..\Libraries\core_cmFunc.h)(0x581CC64E)
+I (..\Libraries\core_cmSimd.h)(0x581CC64E)
+I (C:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x555F1078)
+I (..\User\stm32f4xx_conf.h)(0x58221744)
+F (..\Libraries\stm32f4xx_gpio.c)(0x581CC67C)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries -I ..\User -I ..\Project-I.\RTE\_Target_1-IC:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I"D:\keil mkd-arm\keil\ARM\CMSIS\Include"-D__UVISION_VERSION="527" -DSTM32F429xx -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f4xx_gpio.o --omf_browse ..\output\stm32f4xx_gpio.crf --depend ..\output\stm32f4xx_gpio.d)
+I (..\Libraries\stm32f4xx_gpio.h)(0x581CC67C)
+I (..\Libraries\stm32f4xx.h)(0x582097AC)
+I (..\Libraries\core_cm4.h)(0x581CC64E)
+I (D:\keil mkd-arm\keil\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\Libraries\core_cmInstr.h)(0x581CC64E)
+I (..\Libraries\core_cmFunc.h)(0x581CC64E)
+I (..\Libraries\core_cmSimd.h)(0x581CC64E)
+I (C:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x555F1078)
+I (..\User\stm32f4xx_conf.h)(0x58221744)
+F (.\bsp_led.h)(0x62CD3E64)()
+F (.\bsp_led.c)(0x62CD3FF7)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries -I ..\User -I ..\Project-I.\RTE\_Target_1-IC:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I"D:\keil mkd-arm\keil\ARM\CMSIS\Include"-D__UVISION_VERSION="527" -DSTM32F429xx -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER-o ..\output\bsp_led.o --omf_browse ..\output\bsp_led.crf --depend ..\output\bsp_led.d)
+I (..\Libraries\stm32f4xx_gpio.h)(0x581CC67C)
+I (..\Libraries\stm32f4xx.h)(0x582097AC)
+I (..\Libraries\core_cm4.h)(0x581CC64E)
+I (D:\keil mkd-arm\keil\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\Libraries\core_cmInstr.h)(0x581CC64E)
+I (..\Libraries\core_cmFunc.h)(0x581CC64E)
+I (..\Libraries\core_cmSimd.h)(0x581CC64E)
+I (C:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x555F1078)
+I (..\User\stm32f4xx_conf.h)(0x58221744)
+F (..\User\main.c)(0x62CD404D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries -I ..\User -I ..\Project-I.\RTE\_Target_1-IC:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I"D:\keil mkd-arm\keil\ARM\CMSIS\Include"-D__UVISION_VERSION="527" -DSTM32F429xx -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+I (..\Libraries\stm32f4xx.h)(0x582097AC)
+I (..\Libraries\core_cm4.h)(0x581CC64E)
+I (D:\keil mkd-arm\keil\ARM\ARMCC\include\stdint.h)(0x5D9AD218)
+I (..\Libraries\core_cmInstr.h)(0x581CC64E)
+I (..\Libraries\core_cmFunc.h)(0x581CC64E)
+I (..\Libraries\core_cmSimd.h)(0x581CC64E)
+I (C:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x555F1078)
+I (..\User\stm32f4xx_conf.h)(0x58221744)
+F (..\User\stm32f4xx_conf.h)(0x58221744)()
+F (..\User\stm32f4xx_it.h)(0x58221744)()
+F (..\Libraries\stm32f4xx_gpio.h)(0x581CC67C)()
+F (..\Libraries\core_cmInstr.h)(0x581CC64E)()
+F (..\Libraries\core_cmSimd.h)(0x581CC64E)()
+F (..\Libraries\misc.h)(0x581CC67C)()
+F (..\Libraries\stm32f4xx.h)(0x582097AC)()

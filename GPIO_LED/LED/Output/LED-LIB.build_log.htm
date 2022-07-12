@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: wangyiqing Windows, HP Inc., LIC=JL2UH-WB0QK-DKCBN-YKW6C-Z1PVQ-WKP0E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  D:\keil mkd-arm\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.0.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+C:\Users\wangy\Desktop\STM32_learn\GPIO_LED\LED\Project\LED-LIB.uvprojx
+Project File Date:  07/12/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil mkd-arm\keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f429_439xx.s...
+compiling main.c...
+..\User\stm32f4xx_conf.h(34): error:  #5: cannot open source input file "stm32f4xx_adc.h": No such file or directory
+  #include "stm32f4xx_adc.h"
+..\User\main.c: 0 warnings, 1 error
+compiling bsp_led.c...
+..\User\stm32f4xx_conf.h(34): error:  #5: cannot open source input file "stm32f4xx_adc.h": No such file or directory
+  #include "stm32f4xx_adc.h"
+bsp_led.c: 0 warnings, 1 error
+compiling misc.c...
+..\User\stm32f4xx_conf.h(34): error:  #5: cannot open source input file "stm32f4xx_adc.h": No such file or directory
+  #include "stm32f4xx_adc.h"
+..\Libraries\misc.c: 0 warnings, 1 error
+compiling stm32f4xx_gpio.c...
+..\User\stm32f4xx_conf.h(34): error:  #5: cannot open source input file "stm32f4xx_adc.h": No such file or directory
+  #include "stm32f4xx_adc.h"
+..\Libraries\stm32f4xx_gpio.c: 0 warnings, 1 error
+"..\Output\LED-LIB.axf" - 4 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.5.0.pack
+                Keil.STM32F4xx_DFP.2.5.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

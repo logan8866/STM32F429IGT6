@@ -1,0 +1,1 @@
+..\output\startup_stm32f429_439xx.o: F:\学习资料\0-野火【F429开发板-挑战者】光盘资料\A盘（资料盘）\STM32F429固件库\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s
