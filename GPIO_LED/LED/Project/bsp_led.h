@@ -1,5 +1,4 @@
-
- #define LED1_PIN GPIO_Pin_10
+#define LED1_PIN GPIO_Pin_10
  #define LED1_GPIO_PORT GPIOH
  #define LED1_GPIO_CLK RCC_AHB1Periph_GPIOH
 
@@ -15,8 +14,8 @@
  #define LED4_GPIO_PORT GPIOD
  #define LED4_GPIO_CLK RCC_AHB1Periph_GPIOD
  
- #define digitalHi(p,i) {p->BSRR=i;} 
-#define digitalLo(p,i) {p->BSRR=i<<16;} 
+ #define digitalHi(p,i) {p->BSRRL=i;} 
+#define digitalLo(p,i) {p->BSRRH=i;} 
 #define digitalToggle(p,i) {p->ODR ^=i;} 
 
  #define LED1_TOGGLE digitalToggle(LED1_GPIO_PORT,LED1_PIN)

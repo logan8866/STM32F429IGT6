@@ -1,7 +1,7 @@
 #include "stm32f4xx.h"
 #include "bsp_led.h"
 #include "stm32f4xx_gpio.h"
- void Delay(__IO uint32_t nCount);
+void Delay(__IO uint32_t nCount);
 int main(void)
  {
  /* LED ????? */
@@ -9,21 +9,21 @@ int main(void)
  
  /* ?? LED ? */
  while (1) {
- LED1_ON; // ?
- Delay(0xFFFFFF);
- LED1_OFF; // ?
- 
- LED2_ON; // ?
- Delay(0xFFFFFF);
- LED2_OFF; // ?
- 
- LED3_ON; // ?
- Delay(0xFFFFFF);
- LED3_OFF; // ?
- 
- LED4_ON; // ?
- Delay(0xFFFFFF);
- LED4_OFF; // ?
+// LED1_ON; // ?
+// Delay(0xFFFFFF);
+// LED1_OFF; // ?
+// 
+// LED2_ON; // ?
+// Delay(0xFFFFFF);
+// LED2_OFF; // ?
+// 
+// LED3_ON; // ?
+// Delay(0xFFFFFF);
+// LED3_OFF; // ?
+// 
+// LED4_ON; // ?
+// Delay(0xFFFFFF);
+// LED4_OFF; // ?
  
  /*???? ??????? ??*/
  LED_RED;
@@ -45,3 +45,7 @@ int main(void)
  {
  for (; nCount != 0; nCount--);
  }
+ 
+void TimingDelay_Decrement(){
+
+}

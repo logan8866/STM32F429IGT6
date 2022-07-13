@@ -55,7 +55,7 @@
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
-          <ListingPath>..\Listing\</ListingPath>
+          <ListingPath>..\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F429_439xx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries;..\User;..\Project</IncludePath>
+              <IncludePath>..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\User;..\Libraries\CMSIS\Include;..\Project</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -385,28 +385,43 @@
             <File>
               <FileName>startup_stm32f429_439xx.s</FileName>
               <FileType>2</FileType>
-              <FilePath>F:\学习资料\0-野火【F429开发板-挑战者】光盘资料\A盘（资料盘）\STM32F429固件库\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s</FilePath>
+              <FilePath>..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429_439xx.s</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>STM32_Drive</GroupName>
+          <GroupName>STM32_DEVICE</GroupName>
           <Files>
             <File>
               <FileName>misc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Libraries\misc.c</FilePath>
+              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Libraries\stm32f4xx_gpio.c</FilePath>
+              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
           <GroupName>USER</GroupName>
           <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\stm32f4xx_it.c</FilePath>
+            </File>
             <File>
               <FileName>bsp_led.h</FileName>
               <FileType>5</FileType>
@@ -417,11 +432,6 @@
               <FileType>1</FileType>
               <FilePath>.\bsp_led.c</FilePath>
             </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\main.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -431,39 +441,9 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
-              <FileName>stm32f4xx_conf.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\stm32f4xx_conf.h</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_it.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\stm32f4xx_it.h</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_gpio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\stm32f4xx_gpio.h</FilePath>
-            </File>
-            <File>
-              <FileName>core_cmInstr.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\core_cmInstr.h</FilePath>
-            </File>
-            <File>
-              <FileName>core_cmSimd.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\core_cmSimd.h</FilePath>
-            </File>
-            <File>
-              <FileName>misc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\misc.h</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\stm32f4xx.h</FilePath>
+              <FileName>system_stm32f4xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
         </Group>
