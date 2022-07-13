@@ -10,4 +10,4 @@
 --library_type=microlib --strict --scatter "..\Output\LED-LIB.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
---list "..\LED-LIB.map" -o ..\Output\LED-LIB.axf
+--list "..\Listing\LED-LIB.map" -o ..\Output\LED-LIB.axf
