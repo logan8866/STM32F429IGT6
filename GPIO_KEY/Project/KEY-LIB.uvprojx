@@ -10,6 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -392,14 +393,24 @@
               <FilePath>..\User\main.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_key.h</FileName>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\bsp_key.h</FilePath>
+              <FilePath>..\User\bsp_led.h</FilePath>
             </File>
             <File>
               <FileName>bsp_key.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\bsp_key.c</FilePath>
+              <FilePath>..\User\bsp_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_key.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\bsp_key.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -417,19 +428,19 @@
           <GroupName>STM32_DEVICE</GroupName>
           <Files>
             <File>
-              <FileName>stm32f4xx_rcc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h</FilePath>
+              <FileName>misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c</FilePath>
             </File>
             <File>
-              <FileName>misc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h</FilePath>
+              <FileName>stm32f4xx_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_gpio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h</FilePath>
+              <FileName>stm32f4xx_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c</FilePath>
             </File>
           </Files>
         </Group>

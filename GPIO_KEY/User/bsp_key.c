@@ -1,5 +1,7 @@
 #include "stm32f4xx.h"
 #include "bsp_key.h"
+#include "stm32f4xx_rcc.h"
+#include "stm32f4xx_gpio.h"
 void Key_GPIO_Config(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;

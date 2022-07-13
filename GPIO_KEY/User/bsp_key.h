@@ -6,4 +6,4 @@
 #define KEY2_GPIO_PORT GPIOC
 #define KEY2_GPIO_CLK RCC_AHB1Periph_GPIOC
 
-
+void Key_GPIO_Config(void);
