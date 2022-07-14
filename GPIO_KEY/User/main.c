@@ -41,11 +41,13 @@ return KEY_OFF;
  while (1) {
  if ( Key_Scan(KEY1_GPIO_PORT,KEY1_PIN) == KEY_ON ) {
  /*LED1 反转*/
+	 LED2_OFF;
  LED1_TOGGLE;
  }
  
  if ( Key_Scan(KEY2_GPIO_PORT,KEY2_PIN) == KEY_ON ) {
  /*LED2 反转*/
+	LED1_OFF;
  LED2_TOGGLE;
  }
 }
