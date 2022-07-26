@@ -412,6 +412,11 @@
               <FileType>1</FileType>
               <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f4xx_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -433,14 +438,14 @@
               <FilePath>..\User\bsp_led.c</FilePath>
             </File>
             <File>
+              <FileName>bsp_dma_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_dma_uart.c</FilePath>
+            </File>
+            <File>
               <FileName>bsp_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\bsp_uart.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_uart.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\bsp_uart.h</FilePath>
             </File>
           </Files>
         </Group>
