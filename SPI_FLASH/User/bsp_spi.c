@@ -1,3 +1,9 @@
+#include "stm32f4xx.h"
+#include "stm32f4xx_gpio.h"
+#include "stm32f4xx_spi.h"
+#include "stm32f4xx_flash.h"
+#include "bsp_spi.h"
+#include "stdio.h"
 
 /**
 * @brief SPI_FLASH 初始化
@@ -49,18 +55,6 @@ GPIO_InitTypeDef GPIO_InitStructure;
  
  /* 停止信号 FLASH: CS 引脚高电平*/
  SPI_FLASH_CS_HIGH();
- /*为方便讲解，以下省略 SPI 模式初始化部分*/
- //......
- }
-/**
-* @brief SPI_FLASH 引脚初始化
-* @param 无
-* @retval 无
-*/
-void SPI_FLASH_Init(void)
-{
-/*为方便讲解，省略了 SPI 的 GPIO 初始化部分*/
-//......
  
  SPI_InitTypeDef SPI_InitStructure;
  /* FLASH_SPI 模式配置 */
@@ -87,7 +81,7 @@ void SPI_FLASH_Init(void)
 */
 u8 SPI_FLASH_SendByte(u8 byte)
 {
-SPITimeout = SPIT_FLAG_TIMEOUT;
+ uint32_t SPITimeout = SPIT_FLAG_TIMEOUT;
  
  /* 等待发送缓冲区为空，TXE 事件 */
  while (SPI_I2S_GetFlagStatus(FLASH_SPI, SPI_I2S_FLAG_TXE) == RESET)
@@ -184,7 +178,7 @@ void SPI_FLASH_WaitForWriteEnd(void)
  /* 发送 读状态寄存器 命令 */
  SPI_FLASH_SendByte(W25X_ReadStatusReg);
  
- SPITimeout = SPIT_FLAG_TIMEOUT;
+ uint32_t SPITimeout = SPIT_FLAG_TIMEOUT;
  /* 若 FLASH 忙碌，则等待 */
  do
  {
@@ -254,7 +248,7 @@ void SPI_FLASH_PageWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite)
  if (NumByteToWrite > SPI_FLASH_PerWritePageSize)
  {
  NumByteToWrite = SPI_FLASH_PerWritePageSize;
- FLASH_ERROR("SPI_FLASH_PageWrite too large!");
+ printf("SPI_FLASH_PageWrite too large!");
  }
  
  /* 写入数据*/
@@ -284,11 +278,7 @@ void SPI_FLASH_BufferWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite)
 {
  u8 NumOfPage = 0, NumOfSingle = 0, Addr = 0, count = 0, temp = 0;
  
- /*mod 运算求余，若 writeAddr 是 SPI_FLASH_PageSize 整数倍，运算结果 Addr 值为
-/
- Addr = WriteAddr % SPI_FLASH_PageSize;
- 
- /*差 count 个数据值，刚好可以对齐到页地址*/
+ /*mod 运算求余，若 writeAddr 是 SPI_FLASH_PageSize 整数倍，运算结果 Addr 值为Addr = WriteAddr % SPI_FLASH_PageSize;差 count 个数据值，刚好可以对齐到页地址*/
  count = SPI_FLASH_PageSize - Addr;
  /*计算出要写多少整数页*/
  NumOfPage = NumByteToWrite / SPI_FLASH_PageSize;

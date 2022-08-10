@@ -2,6 +2,7 @@
 #include "stm32f4xx_gpio.h"
 #include "stm32f4xx_usart.h"
 #include "stm32f4xx_spi.h"
+#include "stm32f4xx_flash.h"
 #include "bsp_led.h"
 #include "bsp_uart.h"
 #include "bsp_spi.h"
@@ -42,7 +43,7 @@
  LED_BLUE;
  
  /* 配置串口 1 为：115200 8-N-1 */
- Debug_USART_Config();
+ USARTx_Config();
  
  printf("\r\n 这是一个 16M 串行 flash(W25Q128)实验 \r\n");
  

@@ -413,9 +413,14 @@
               <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_i2c.c</FileName>
+              <FileName>stm32f4xx_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c</FilePath>
+              <FilePath>..\..\I2C_EEPROM\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\I2C_EEPROM\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -443,14 +448,14 @@
               <FilePath>..\User\bsp_uart.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_i2c_eeprom.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\bsp_i2c_eeprom.c</FilePath>
+              <FileName>bsp_spi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\bsp_spi.h</FilePath>
             </File>
             <File>
-              <FileName>bsp_i2c_eeprom.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\bsp_i2c_eeprom.h</FilePath>
+              <FileName>bsp_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\bsp_spi.c</FilePath>
             </File>
           </Files>
         </Group>
