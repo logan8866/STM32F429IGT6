@@ -1,3 +1,4 @@
+#include "stm32f4xx.h"
 //SPI 号及时钟初始化函数
 #define FLASH_SPI SPI5
 #define FLASH_SPI_CLK RCC_APB2Periph_SPI5
@@ -48,8 +49,10 @@
  #define W25X_ManufactDeviceID 0x90
  #define W25X_JedecDeviceID 0x9F
  /*其它*/
- #define sFLASH_ID 0XEF4018 
+ #define sFLASH_ID 0XEF4019 
  #define Dummy_Byte 0xFF
+ /*WIP(BUSY)标志：FLASH 内部正在写入*/
+ #define WIP_Flag                  0x01
 #define SPIT_FLAG_TIMEOUT         ((uint32_t)0x1000)
 #define SPIT_LONG_TIMEOUT         ((uint32_t)(10 * SPIT_FLAG_TIMEOUT))
 #define SPI_FLASH_PageSize              256
@@ -57,7 +60,7 @@
 
 void SPI_FLASH_Init(void);
 void SPI_FLASH_SectorErase(u32 SectorAddr);
-void SPI_FLASH_BulkErase(void);
+
 void SPI_FLASH_PageWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite);
 void SPI_FLASH_BufferWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite);
 void SPI_FLASH_BufferRead(u8* pBuffer, u32 ReadAddr, u16 NumByteToRead);
@@ -65,7 +68,7 @@ u32 SPI_FLASH_ReadID(void);
 u32 SPI_FLASH_ReadDeviceID(void);
 void SPI_FLASH_StartReadSequence(u32 ReadAddr);
 void SPI_Flash_PowerDown(void);
-void SPI_Flash_WAKEUP(void);
+
 
 
 u8 SPI_FLASH_ReadByte(void);
@@ -73,3 +76,5 @@ u8 SPI_FLASH_SendByte(u8 byte);
 u16 SPI_FLASH_SendHalfWord(u16 HalfWord);
 void SPI_FLASH_WriteEnable(void);
 void SPI_FLASH_WaitForWriteEnd(void);
+
+uint16_t SPI_TIMEOUT_UserCallback(uint8_t errorCode);

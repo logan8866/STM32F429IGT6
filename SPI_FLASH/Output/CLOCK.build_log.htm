@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: wangyiqing Windows, HP Inc., LIC=JL2UH-WB0QK-DKCBN-YKW6C-Z1PVQ-WKP0E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  D:\keil mkd-arm\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.0.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+C:\Users\wangy\Desktop\STM32_learn\SPI_FLASH\Project\SPI_FLASH.uvprojx
+Project File Date:  08/10/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil mkd-arm\keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f429_439xx.s...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_flash.c...
+compiling misc.c...
+compiling stm32f4xx_spi.c...
+compiling main.c...
+..\User\bsp_led.h(65): warning:  #1-D: last line of file ends without a newline
+   
+..\User\bsp_spi.h(80): warning:  #1-D: last line of file ends without a newline
+  uint16_t SPI_TIMEOUT_UserCallback(uint8_t errorCode);
+..\User\main.c(137): warning:  #1-D: last line of file ends without a newline
+  /*********************************************END OF FILE**********************/
+..\User\main.c: 3 warnings, 0 errors
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_it.c...
+compiling bsp_uart.c...
+..\User\bsp_uart.c(5): warning:  #177-D: function "NVIC_Configuration"  was declared but never referenced
+  static void NVIC_Configuration(void)
+..\User\bsp_uart.c: 1 warning, 0 errors
+compiling system_stm32f4xx.c...
+compiling bsp_led.c...
+..\User\bsp_led.h(65): warning:  #1-D: last line of file ends without a newline
+   
+..\User\bsp_led.c(42): warning:  #1-D: last line of file ends without a newline
+   
+..\User\bsp_led.c: 2 warnings, 0 errors
+compiling bsp_spi.c...
+..\User\bsp_spi.h(80): warning:  #1-D: last line of file ends without a newline
+  uint16_t SPI_TIMEOUT_UserCallback(uint8_t errorCode);
+..\User\bsp_spi.c(394): warning:  #1-D: last line of file ends without a newline
+  } 
+..\User\bsp_spi.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=4716 RO-data=460 RW-data=56 ZI-data=1048  
+FromELF: creating hex file...
+"..\Output\CLOCK.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.5.0.pack
+                Keil.STM32F4xx_DFP.2.5.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\wangy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
