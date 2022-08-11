@@ -3,11 +3,11 @@
 <title>Static Call Graph - [..\Output\CLOCK.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\Output\CLOCK.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Aug 11 15:01:17 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Aug 11 15:29:16 2022
 <BR><P>
-<H3>Maximum Stack Usage =        120 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        104 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main &rArr; SPI_FLASH_BufferWrite &rArr; SPI_FLASH_PageWrite &rArr; SPI_FLASH_WaitForWriteEnd &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+main &rArr; SPI_FLASH_BufferWrite &rArr; SPI_FLASH_PageWrite &rArr; SPI_FLASH_WriteEnable &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 <P>
 <H3>
 Mutually Recursive functions
@@ -530,7 +530,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[72]"></a>SPI_FLASH_BufferRead</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, bsp_spi.o(i.SPI_FLASH_BufferRead))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SPI_FLASH_BufferRead &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SPI_FLASH_BufferRead &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SendByte
 </UL>
@@ -538,7 +538,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[74]"></a>SPI_FLASH_BufferWrite</STRONG> (Thumb, 290 bytes, Stack size 40 bytes, bsp_spi.o(i.SPI_FLASH_BufferWrite))
-<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = SPI_FLASH_BufferWrite &rArr; SPI_FLASH_PageWrite &rArr; SPI_FLASH_WaitForWriteEnd &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = SPI_FLASH_BufferWrite &rArr; SPI_FLASH_PageWrite &rArr; SPI_FLASH_WriteEnable &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PageWrite
 </UL>
@@ -559,7 +559,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[75]"></a>SPI_FLASH_PageWrite</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, bsp_spi.o(i.SPI_FLASH_PageWrite))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = SPI_FLASH_PageWrite &rArr; SPI_FLASH_WaitForWriteEnd &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SPI_FLASH_PageWrite &rArr; SPI_FLASH_WriteEnable &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WriteEnable
@@ -570,7 +570,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7e]"></a>SPI_FLASH_ReadDeviceID</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, bsp_spi.o(i.SPI_FLASH_ReadDeviceID))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SPI_FLASH_ReadDeviceID &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SPI_FLASH_ReadDeviceID &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SendByte
 </UL>
@@ -578,7 +578,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7f]"></a>SPI_FLASH_ReadID</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, bsp_spi.o(i.SPI_FLASH_ReadID))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = SPI_FLASH_ReadID &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SPI_FLASH_ReadID &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SendByte
@@ -587,7 +587,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[80]"></a>SPI_FLASH_SectorErase</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, bsp_spi.o(i.SPI_FLASH_SectorErase))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = SPI_FLASH_SectorErase &rArr; SPI_FLASH_WaitForWriteEnd &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SPI_FLASH_SectorErase &rArr; SPI_FLASH_WriteEnable &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WriteEnable
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WaitForWriteEnd
@@ -596,8 +596,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[73]"></a>SPI_FLASH_SendByte</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, bsp_spi.o(i.SPI_FLASH_SendByte))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<P><STRONG><a name="[73]"></a>SPI_FLASH_SendByte</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, bsp_spi.o(i.SPI_FLASH_SendByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_SendData
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_ReceiveData
@@ -614,8 +614,8 @@ Global Symbols
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PageWrite
 </UL>
 
-<P><STRONG><a name="[7d]"></a>SPI_FLASH_WaitForWriteEnd</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, bsp_spi.o(i.SPI_FLASH_WaitForWriteEnd))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SPI_FLASH_WaitForWriteEnd &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<P><STRONG><a name="[7d]"></a>SPI_FLASH_WaitForWriteEnd</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, bsp_spi.o(i.SPI_FLASH_WaitForWriteEnd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SPI_FLASH_WaitForWriteEnd &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_TIMEOUT_UserCallback
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SendByte
@@ -625,7 +625,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7b]"></a>SPI_FLASH_WriteEnable</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bsp_spi.o(i.SPI_FLASH_WriteEnable))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SPI_FLASH_WriteEnable &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SPI_FLASH_WriteEnable &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SendByte
 </UL>
@@ -634,7 +634,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[85]"></a>SPI_Flash_PowerDown</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, bsp_spi.o(i.SPI_Flash_PowerDown))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SPI_Flash_PowerDown &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SPI_Flash_PowerDown &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SendByte
 </UL>
@@ -782,7 +782,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> printf5.o(i.__0printf$5)
 </UL>
 <P><STRONG><a name="[65]"></a>main</STRONG> (Thumb, 246 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = main &rArr; SPI_FLASH_BufferWrite &rArr; SPI_FLASH_PageWrite &rArr; SPI_FLASH_WaitForWriteEnd &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = main &rArr; SPI_FLASH_BufferWrite &rArr; SPI_FLASH_PageWrite &rArr; SPI_FLASH_WriteEnable &rArr; SPI_FLASH_SendByte &rArr; SPI_TIMEOUT_UserCallback &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USARTx_Config
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Flash_PowerDown
